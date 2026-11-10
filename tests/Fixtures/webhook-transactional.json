@@ -1,0 +1,75 @@
+[
+  {
+    "subject": "Your chosen subject",
+    "smtpAccount": "1.accountname.smtp",
+    "to": {
+      "email": "test@test.com",
+      "name": "Jane Doe",
+      "messageId": "d18aa9aa-109e-1b16-a52d-205eac42e44a@domain.com"
+    },
+    "from": {
+      "email": "test@domain.com",
+      "name": "Test Corp."
+    },
+    "tags": null,
+    "status": "dropped",
+    "statusTime": 1580996271,
+    "statusDesc": "test@test.com in blacklist",
+    "allStatuses": [
+      {
+        "status": "injected",
+        "statusTime": 1580996275,
+        "statusDesc": "injected"
+      },
+      {
+        "status": "dropped",
+        "statusTime": 1580996271,
+        "statusDesc": "test@test.com in blacklist"
+      }
+    ]
+  },
+  {
+    "subject": "Order shipped",
+    "smtpAccount": "1.accountname.smtp",
+    "to": {"email": "jane@example.com", "name": "Jane", "messageId": "m2@example.com"},
+    "from": {"email": "shop@example.com", "name": "Shop"},
+    "tags": ["orders", "shipping"],
+    "status": "ok",
+    "statusTime": 1580996300,
+    "statusDesc": "250 2.0.0 Ok: queued as C03802B0155F",
+    "allStatuses": [
+      {"status": "injected", "statusTime": 1580996280, "statusDesc": "injected"},
+      {"status": "ok", "statusTime": 1580996300, "statusDesc": "250 2.0.0 Ok: queued as C03802B0155F"}
+    ]
+  },
+  {
+    "subject": "Order shipped",
+    "smtpAccount": "1.accountname.smtp",
+    "to": {"email": "john@example.com", "name": null, "messageId": "m3@example.com"},
+    "from": {"email": "shop@example.com", "name": "Shop"},
+    "tags": ["orders"],
+    "status": "hardbounce",
+    "statusTime": 1580996400,
+    "statusDesc": "550 5.1.1 user unknown",
+    "allStatuses": []
+  },
+  {
+    "subject": "Order shipped",
+    "smtpAccount": "1.accountname.smtp",
+    "to": {"email": "jane@example.com", "name": "Jane", "messageId": "m2@example.com"},
+    "from": {"email": "shop@example.com", "name": "Shop"},
+    "tags": ["orders"],
+    "status": "open",
+    "statusTime": 1580997000,
+    "statusDesc": "open",
+    "allStatuses": []
+  },
+  {
+    "externalId": "sms-1",
+    "phoneNumber": "+48500100200",
+    "status": 1,
+    "statusDesc": "DELIVERED",
+    "statusTime": "2021-04-27T00:00:18",
+    "webhookUrl": "https://example.com"
+  }
+]
